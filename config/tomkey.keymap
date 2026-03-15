@@ -45,10 +45,10 @@
 
         SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans     &trans     &trans    &trans   &trans                                &kp LS(N7)     &kp LS(NUMBER_2)  &kp LS(BACKSLASH)  &kp LS(NUMBER_3)  &kp LS(N5)
+&kp LCTRL  &trans     &trans    &trans   &trans      &trans         &trans     &kp SEMICOLON  &kp SQT           &kp LEFT_BRACKET   &kp AMPERSAND     &kp MINUS
+&kp LSHFT  &kp LCTRL  &kp LALT  &trans   &trans      &trans         &trans     &kp BACKSLASH  &kp LS(NUMBER_4)  &kp LS(NUMBER_1)   &kp LS(SLASH)     &kp UNDER
+&trans     &kp LGUI   &trans    &kp TAB  &kp DELETE  &kp SPACE      &kp ENTER  &kp BSPC                                                              &kp ESC
             >;
         };
 
@@ -72,10 +72,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans     &trans     &trans    &trans   &trans                             &trans    &trans  &trans  &trans  &trans
+&kp LCTRL  &trans     &trans    &trans   &trans   &trans         &trans     &trans    &trans  &trans  &trans  &kp MINUS
+&kp LSHFT  &kp LCTRL  &kp LALT  &trans   &trans   &trans         &trans     &trans    &trans  &trans  &trans  &trans
+&trans     &kp LGUI   &trans    &kp TAB  &kp DEL  &kp SPACE      &kp ENTER  &kp BSPC                          &kp ESC
             >;
         };
     };
