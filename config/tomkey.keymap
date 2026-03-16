@@ -11,7 +11,7 @@
             bindings = <
 &kp Q         &kp W         &kp E           &kp R    &kp T                                            &kp Y          &kp U  &kp I                &kp O             &kp P
 &mt LCTRL A   &kp S         &kp D           &kp F    &kp G      &kp LS(N8)             &kp LS(N9)     &kp H          &kp J  &kp K                &kp L             &lt 3 MINUS
-&mt LSHFT Z   &mt LCTRL X   &mt LEFT_ALT C  &kp V    &kp B      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp N          &kp M  &mt RIGHT_ALT COMMA  &mt RCTRL PERIOD  &mt LS(0x87)
+&mt LSHFT Z   &mt LCTRL X   &mt LEFT_ALT C  &kp V    &kp B      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp N          &kp M  &mt RIGHT_ALT COMMA  &mt RCTRL PERIOD  &mt RSHFT LS(0x87)
 &lt 4 GRAVE   &kp LEFT_WIN  &mo 6           &kp TAB  &lt 3 DEL  &lt 7 SPACE            &lt 7 ENTER    &kp BACKSPACE                                                &lt 5 ESCAPE
             >;
         };
