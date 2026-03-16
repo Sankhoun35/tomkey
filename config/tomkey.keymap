@@ -4,8 +4,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    tapping-term-ms = <500>;
-    require-prior-idle-ms = <500>;
+    tapping-term-ms = <800>;
+    require-prior-idle-ms = <1000>;
 };
 
 / {
