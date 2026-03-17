@@ -32,6 +32,19 @@
 &mt { flavor = "tap-preferred"; };
 
 / {
+    behaviors {
+        ST: Scroll_Tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SCROLL / TAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            hold-while-undecided;
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -46,10 +59,10 @@
 
         MOUSE {
             bindings = <
-&none           &none         &none         &none  &none                    &none  &none     &none     &none  &none
-&kp LCTRL       &none         &none         &none  &none  &none      &none  &none  &mkp MB1  &mkp MB2  &none  &none
-&kp LEFT_SHIFT  &kp LCTRL     &kp LEFT_ALT  &none  &none  &none      &none  &none  &none     &none     &none  &none
-&none           &kp LEFT_WIN  &none         &none  &none  &none      &none  &none                             &none
+&none           &none         &none         &none  &none                    &none  &none     &none     &none     &none
+&kp LCTRL       &none         &none         &none  &none  &none      &none  &none  &mkp MB1  &mkp MB2  &mkp MB2  &none
+&kp LEFT_SHIFT  &kp LCTRL     &kp LEFT_ALT  &none  &none  &none      &none  &none  &none     &none     &none     &none
+&none           &kp LEFT_WIN  &none         &none  &none  &none      &none  &none                                &none
             >;
         };
 
