@@ -30,7 +30,8 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <1600>;
+        // cpi = <1600>; 20260318_コメント化
+		cpi = <800>;  // 20260318_1600から800にカーソルセンサーレベル変更
     };
 };
 
@@ -49,6 +50,7 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackball>;
+		input-processors = <&zip_xy_scaler 1 2>;  // 20260318_カーソル速度 追加（1/2倍速）
     };
 };
 
