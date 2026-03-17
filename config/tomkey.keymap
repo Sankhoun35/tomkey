@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -28,6 +29,8 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 
+&mt { flavor = "tap-preferred"; };
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -35,7 +38,7 @@
         default_layer {
             bindings = <
 &kp Q        &kp W         &kp E           &kp R    &kp T                                              &kp Y      &kp U  &kp I                &kp O             &kp P
-&mt LCTRL A  &kp S         &kp D           &kp F    &kp G        &kp LS(N8)             &kp LS(N9)     &kp H      &kp J  &kp K                &kp L             &lt 3 MINUS
+&lt 3 A      &kp S         &kp D           &kp F    &kp G        &kp LS(N8)             &kp LS(N9)     &kp H      &kp J  &kp K                &kp L             &lt 3 MINUS
 &mt LSHFT Z  &mt LCTRL X   &mt LEFT_ALT C  &kp V    &kp B        &kp RIGHT_BRACKET      &kp BACKSLASH  &kp N      &kp M  &mt RIGHT_ALT COMMA  &mt RCTRL PERIOD  &mt RSHFT SLASH
 &lt 4 GRAVE  &kp LEFT_WIN  &mo 6           &kp TAB  &lt 3 ENTER  &lt 7 BSPC             &lt 7 DEL      &kp SPACE                                                &lt 5 ESCAPE
             >;
@@ -43,55 +46,55 @@
 
         MOUSE {
             bindings = <
-&none           &none         &none         &none   &none                       &none   &none     &none     &none   &none 
-&kp LCTRL       &none         &none         &none   &none   &none       &none   &none   &mkp MB1  &mkp MB2  &none   &none 
-&kp LEFT_SHIFT  &kp LCTRL     &kp LEFT_ALT  &none   &none   &none       &none   &none   &none     &none     &none   &none 
-&none           &kp LEFT_WIN  &none         &none   &none   &none       &none   &none                               &none 
+&none           &none         &none         &none  &none                    &none  &none     &none     &none  &none
+&kp LCTRL       &none         &none         &none  &none  &none      &none  &none  &mkp MB1  &mkp MB2  &none  &none
+&kp LEFT_SHIFT  &kp LCTRL     &kp LEFT_ALT  &none  &none  &none      &none  &none  &none     &none     &none  &none
+&none           &kp LEFT_WIN  &none         &none  &none  &none      &none  &none                             &none
             >;
         };
 
         SCROLL {
             bindings = <
-&none      &none      &none     &none    &none                             &none      &none   &none   &none   &none 
-&kp LCTRL  &none      &none     &none    &none      &none         &none    &none      &none   &none   &none   &kp MINUS
-&kp LSHFT  &kp LCTRL  &kp LALT  &none    &none      &none         &none    &none      &none   &none   &none   &none 
-&none      &kp LGUI   &none     &kp TAB  &kp ENTER  &kp BSPC      &kp DEL  &kp SPACE                          &kp ESC
+&none      &none      &none     &none    &none                             &none      &none  &none  &none  &none
+&kp LCTRL  &none      &none     &none    &none      &none         &none    &none      &none  &none  &none  &kp MINUS
+&kp LSHFT  &kp LCTRL  &kp LALT  &none    &none      &none         &none    &none      &none  &none  &none  &none
+&none      &kp LGUI   &none     &kp TAB  &kp ENTER  &kp BSPC      &kp DEL  &kp SPACE                       &kp ESC
             >;
         };
 
         ARROW {
             bindings = <
-&none           &none           &kp UP_ARROW    &kp LC(UP_ARROW)    &kp PG_UP                                &kp PAGE_UP    &kp RC(LEFT_ARROW)  &kp LG(UP_ARROW)    &kp RC(RIGHT_ARROW)  &none 
-&none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp HOME       &kp END        &kp HOME   &kp END        &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &none 
-&kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_ALT    &kp LC(DOWN_ARROW)  &kp PAGE_DOWN  &none          &none      &kp PAGE_DOWN  &none               &none               &none                &none 
+&none           &none           &kp UP_ARROW    &kp LC(UP_ARROW)    &kp PG_UP                                &kp PAGE_UP    &kp RC(LEFT_ARROW)  &kp LG(UP_ARROW)    &kp RC(RIGHT_ARROW)  &none
+&none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp HOME       &kp END        &kp HOME   &kp END        &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &none
+&kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_ALT    &kp LC(DOWN_ARROW)  &kp PAGE_DOWN  &none          &none      &kp PAGE_DOWN  &none               &none               &none                &none
 &none           &kp LEFT_WIN    &none           &kp TAB             &kp DEL        &kp SPACE      &kp ENTER  &kp BACKSPACE                                                               &kp ESCAPE
             >;
         };
 
         NUM {
             bindings = <
-&kp SLASH                &kp MINUS              &kp KP_NUMBER_7           &kp KP_NUMBER_8  &kp KP_NUMBER_9                                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none   &kp PERCENT
-&mt LCTRL DOUBLE_QUOTES  &kp COLON              &kp KP_NUMBER_4           &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH       &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none   &kp MINUS
-&mt LEFT_SHIFT EQUAL     &mt LCTRL KP_NUMBER_0  &mt LEFT_ALT KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD      &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none   &kp LS(0x87)
-&none                    &kp LEFT_ARROW         &kp RIGHT_ARROW           &kp TAB          &kp ENTER        &kp BSPC        &kp DEL          &kp SPACE                                                  &kp ESC
+&kp SLASH                &kp MINUS              &kp KP_NUMBER_7           &kp KP_NUMBER_8  &kp KP_NUMBER_9                                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none  &kp PERCENT
+&mt LCTRL DOUBLE_QUOTES  &kp COLON              &kp KP_NUMBER_4           &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH       &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &kp MINUS
+&mt LEFT_SHIFT EQUAL     &mt LCTRL KP_NUMBER_0  &mt LEFT_ALT KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD      &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &kp LS(0x87)
+&none                    &kp LEFT_ARROW         &kp RIGHT_ARROW           &kp TAB          &kp ENTER        &kp BSPC        &kp DEL          &kp SPACE                                                 &kp ESC
             >;
         };
 
         FUNCTION {
             bindings = <
-&none      &kp F12        &kp F7           &kp F8   &kp F9                            &kp F7     &kp F8  &kp F9  &kp F12  &none 
-&kp LCTRL  &kp F11        &kp F4           &kp F5   &kp F6     &none         &none    &kp F4     &kp F5  &kp F6  &kp F11  &none 
-&kp LSHFT  &mt LCTRL F10  &mt LEFT_ALT F1  &kp F2   &kp F3     &none         &none    &kp F1     &kp F2  &kp F3  &kp F10  &none 
-&none      &kp LEFT_WIN   &none            &kp TAB  &kp ENTER  &kp BSPC      &kp DEL  &kp SPACE                           &none 
+&none      &kp F12        &kp F7           &kp F8   &kp F9                            &kp F7     &kp F8  &kp F9  &kp F12  &none
+&kp LCTRL  &kp F11        &kp F4           &kp F5   &kp F6     &none         &none    &kp F4     &kp F5  &kp F6  &kp F11  &none
+&kp LSHFT  &mt LCTRL F10  &mt LEFT_ALT F1  &kp F2   &kp F3     &none         &none    &kp F1     &kp F2  &kp F3  &kp F10  &none
+&none      &kp LEFT_WIN   &none            &kp TAB  &kp ENTER  &kp BSPC      &kp DEL  &kp SPACE                           &none
             >;
         };
 
         BT {
             bindings = <
-&kp LG(Q)      &kp LC(W)  &bt BT_CLR_ALL  &bt BT_NXT  &none                       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp LG(LS(Z))  &none      &kp LC(C)       &none       &none   &none       &none   &none       &none       &none         &none         &none 
-&kp LG(Z)      &kp LG(X)  &kp LG(C)       &kp LG(V)   &none   &none       &none   &none       &none       &none         &none         &none 
-&none          &none      &none           &none       &none   &none       &none   &none                                               &none 
+&kp LG(Q)      &kp LC(W)  &bt BT_CLR_ALL  &bt BT_NXT  &none                    &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp LG(LS(Z))  &none      &kp LC(C)       &none       &none  &none      &none  &none       &none       &none         &none         &none
+&kp LG(Z)      &kp LG(X)  &kp LG(C)       &kp LG(V)   &none  &none      &none  &none       &none       &none         &none         &none
+&none          &none      &none           &none       &none  &none      &none  &none                                               &none
             >;
         };
 
