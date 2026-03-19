@@ -51,6 +51,7 @@
         status = "disabled";
         device = <&trackball>;
 		input-processors = <&zip_xy_scaler 1 4>;  // 20260318_カーソル速度 追加（1/2倍速）
+		input-processors = <&zip_temp_layer 1 10000>; // 20260319_AKL抜け出し処理 追加
     };
 };
 
@@ -64,4 +65,20 @@
 
 &trackball_split {
     device = <&trackball>;
+};
+
+&zip_temp_layer {
+    excluded-positions = <
+        6 // U
+        7 // I
+        8 // O
+		10 // A
+		18 // J
+        19 // K
+        20 // l
+		22 // Z
+        23 // X
+        24 // C
+		35 //WIN
+    >;
 };
