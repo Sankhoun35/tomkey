@@ -53,7 +53,7 @@
 &kp Q        &kp W         &kp E           &kp R    &kp T                                               &kp Y      &kp U  &kp I                &kp O             &kp P
 &lt 3 A      &kp S         &kp D           &kp F    &kp G        &kp LANGUAGE_1         &kp LANGUAGE_2  &kp H      &kp J  &kp K                &kp L             &lt 3 MINUS
 &mt LSHFT Z  &mt LCTRL X   &mt LEFT_ALT C  &kp V    &kp B        &kp RIGHT_BRACKET      &kp BACKSLASH   &kp N      &kp M  &mt RIGHT_ALT COMMA  &mt RCTRL PERIOD  &mt RSHFT SLASH
-&lt 4 GRAVE  &kp LEFT_WIN  &mo 6           &kp TAB  &lt 7 ENTER  &kp BACKSPACE          &kp DEL         &kp SPACE                                                &lt 5 ESCAPE
+&lt 4 GRAVE  &kp LEFT_WIN  &mo 6           &kp TAB  &kp DEL      &lt 7 SPACE            &lt 7 ENTER     &kp BSPC                                                 &lt 5 ESC
             >;
         };
 
@@ -80,7 +80,7 @@
 &none           &none           &kp UP_ARROW    &kp LC(UP_ARROW)    &kp PG_UP                                &kp PAGE_UP    &kp RC(LEFT_ARROW)  &kp LG(UP_ARROW)    &kp RC(RIGHT_ARROW)  &none
 &none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp HOME       &kp END        &kp HOME   &kp END        &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &none
 &kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_ALT    &kp LC(DOWN_ARROW)  &kp PAGE_DOWN  &none          &none      &kp PAGE_DOWN  &none               &none               &none                &none
-&none           &kp LEFT_WIN    &none           &kp TAB             &kp DEL        &kp SPACE      &kp ENTER  &kp BACKSPACE                                                               &kp ESCAPE
+&none           &kp LEFT_WIN    &none           &kp TAB             &kp BSPC       &kp ENTER      &kp SPACE  &kp DEL                                                                     &kp ESC
             >;
         };
 
@@ -89,16 +89,16 @@
 &kp KP_SLASH             &kp KP_MINUS           &kp KP_NUMBER_7           &kp KP_NUMBER_8  &kp KP_NUMBER_9                                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none  &kp PERCENT
 &mt LCTRL KP_ASTERISK    &kp KP_PLUS            &kp KP_NUMBER_4           &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH      &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &kp KP_MINUS
 &mt LEFT_SHIFT KP_EQUAL  &mt LCTRL KP_NUMBER_0  &mt LEFT_ALT KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT        &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &kp LS(0x87)
-&none                    &kp LEFT_ARROW         &kp RIGHT_ARROW           &kp TAB          &kp ENTER        &kp BSPC          &kp DEL          &kp SPACE                                                 &kp ESC
+&none                    &kp LEFT_ARROW         &kp RIGHT_ARROW           &kp TAB          &kp BSPC         &kp ENTER         &kp SPACE        &kp DEL                                                   &kp ESC
             >;
         };
 
         FUNCTION {
             bindings = <
-&none      &kp F12        &kp F7           &kp F8   &kp F9                            &kp F7     &kp F8  &kp F9  &kp F12  &none
-&kp LCTRL  &kp F11        &kp F4           &kp F5   &kp F6     &none         &none    &kp F4     &kp F5  &kp F6  &kp F11  &none
-&kp LSHFT  &mt LCTRL F10  &mt LEFT_ALT F1  &kp F2   &kp F3     &none         &none    &kp F1     &kp F2  &kp F3  &kp F10  &none
-&none      &kp LEFT_WIN   &none            &kp TAB  &kp ENTER  &kp BSPC      &kp DEL  &kp SPACE                           &none
+&none      &kp F12        &kp F7           &kp F8   &kp F9                                &kp F7     &kp F8  &kp F9  &kp F12  &none
+&kp LCTRL  &kp F11        &kp F4           &kp F5   &kp F6     &none         &none        &kp F4     &kp F5  &kp F6  &kp F11  &none
+&kp LSHFT  &mt LCTRL F10  &mt LEFT_ALT F1  &kp F2   &kp F3     &none         &none        &kp F1     &kp F2  &kp F3  &kp F10  &none
+&none      &kp LEFT_WIN   &none            &kp TAB  &kp DEL    &kp SPACE     &kp ENTER    &kp BSPC                            &none
             >;
         };
 
@@ -116,7 +116,7 @@
 &none      &none      &none     &kp LS(N8)         &kp LS(N9)                                &kp LS(N7)     &kp LS(NUMBER_2)  &kp JP_PIPE       &kp LS(NUMBER_3)  &kp LS(N5)
 &kp LCTRL  &none      &none     &kp RIGHT_BRACKET  &kp BACKSLASH   &none          &none      &kp SEMICOLON  &kp SQT           &kp LEFT_BRACKET  &kp JP_AMPERSAND  &kp JP_TILDE
 &kp LSHFT  &kp LCTRL  &kp LALT  &kp LS(COMMA)      &kp LS(PERIOD)  &none          &none      &kp JP_YEN     &kp LS(NUMBER_4)  &kp LS(NUMBER_1)  &kp LS(SLASH)     &kp JP_UNDERSCORE
-&none      &kp LGUI   &none     &kp TAB            &kp DELETE      &kp SPACE      &kp ENTER  &kp BSPC                                                             &kp ESC
+&none      &kp LGUI   &none     &kp TAB            &kp DEL         &kp SPACE      &kp ENTER  &kp BSPC                                                             &kp ESC
             >;
         };
     };
