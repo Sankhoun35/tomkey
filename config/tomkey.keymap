@@ -59,8 +59,8 @@
 
         MOUSE {
             bindings = <
-&none           &none         &none         &none  &none                    &none  &mkp MB4  &mkp MB3          &mkp MB5  &none
-&kp LCTRL       &none         &none         &none  &none  &none      &none  &none  &mkp MB1  &ST 2 LEFT_SHIFT  &mkp MB2  &none
+&none           &none         &none         &none  &none                    &none  &none     &none             &none     &none
+&none           &none         &none         &none  &none  &none      &none  &none  &mkp MB1  &ST 2 LEFT_SHIFT  &mkp MB2  &none
 &kp LEFT_SHIFT  &kp LCTRL     &kp LEFT_ALT  &none  &none  &none      &none  &none  &none     &none             &none     &none
 &none           &kp LEFT_WIN  &none         &none  &none  &none      &none  &none                                        &none
             >;
@@ -96,7 +96,7 @@
         FUNCTION {
             bindings = <
 &none      &kp F12        &kp F7           &kp F8   &kp F9                             &kp F7    &kp F8  &kp F9  &kp F12  &none
-&kp LCTRL  &kp F11        &kp F4           &kp F5   &kp F6   &none          &none      &kp F4    &kp F5  &kp F6  &kp F11  &none
+&none      &kp F11        &kp F4           &kp F5   &kp F6   &none          &none      &kp F4    &kp F5  &kp F6  &kp F11  &none
 &kp LSHFT  &mt LCTRL F10  &mt LEFT_ALT F1  &kp F2   &kp F3   &none          &none      &kp F1    &kp F2  &kp F3  &kp F10  &none
 &none      &kp LEFT_WIN   &none            &kp TAB  &kp DEL  &kp SPACE      &kp ENTER  &kp BSPC                           &none
             >;
@@ -114,7 +114,7 @@
         SYMBOL {
             bindings = <
 &none      &none      &none     &kp LS(N8)         &kp LS(N9)                                &kp LS(N7)     &kp LS(NUMBER_2)  &kp JP_PIPE       &kp LS(NUMBER_3)  &kp LS(N5)
-&kp LCTRL  &none      &none     &kp RIGHT_BRACKET  &kp BACKSLASH   &none          &none      &kp SEMICOLON  &kp SQT           &kp LEFT_BRACKET  &kp JP_AMPERSAND  &kp JP_TILDE
+&none      &none      &none     &kp RIGHT_BRACKET  &kp BACKSLASH   &none          &none      &kp SEMICOLON  &kp SQT           &kp LEFT_BRACKET  &kp JP_AMPERSAND  &kp JP_TILDE
 &kp LSHFT  &kp LCTRL  &kp LALT  &kp LS(COMMA)      &kp LS(PERIOD)  &none          &none      &kp JP_YEN     &kp LS(NUMBER_4)  &kp LS(NUMBER_1)  &kp LS(SLASH)     &kp JP_UNDERSCORE
 &none      &kp LGUI   &none     &kp TAB            &kp DEL         &kp SPACE      &kp ENTER  &kp BSPC                                                             &kp ESC
             >;
