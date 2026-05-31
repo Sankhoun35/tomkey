@@ -77,10 +77,10 @@
 
         ARROW {
             bindings = <
-&none           &none           &kp UP_ARROW    &kp LC(UP_ARROW)    &kp PG_UP                                &kp PAGE_UP    &kp RC(LEFT_ARROW)  &kp UP_ARROW    &kp RC(RIGHT_ARROW)  &none
-&none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp HOME       &kp END        &kp HOME   &kp END        &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &none
-&kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_ALT    &kp LC(DOWN_ARROW)  &kp PAGE_DOWN  &none          &none      &kp PAGE_DOWN  &none               &none           &none                &none
-&none           &kp LEFT_WIN    &none           &kp TAB             &kp BSPC       &kp ENTER      &kp SPACE  &kp DEL                                                                 &kp ESC
+&none           &none           &kp UP_ARROW    &kp LC(UP_ARROW)    &kp PG_UP                                &none    &none     &none        &none     &none
+&none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp HOME       &kp END        &none      &none    &mkp MB1  &ST 2 LSHFT  &mkp MB2  &none
+&kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_ALT    &kp LC(DOWN_ARROW)  &kp PAGE_DOWN  &none          &none      &none    &none     &none        &none     &none
+&none           &kp LEFT_WIN    &none           &kp TAB             &kp BSPC       &kp ENTER      &kp SPACE  &kp DEL                                   &kp ESC
             >;
         };
 
@@ -104,10 +104,10 @@
 
         BT {
             bindings = <
-&kp LG(Q)      &kp LC(W)  &bt BT_CLR_ALL  &bt BT_PRV  &bt BT_NXT                    &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp LG(LS(Z))  &none      &kp LC(C)       &none       &none       &none      &none  &none       &none       &none         &none         &none
-&kp LG(Z)      &kp LG(X)  &kp LG(C)       &kp LG(V)   &none       &none      &none  &none       &none       &none         &none         &none
-&none          &none      &none           &none       &none       &none      &none  &none                                               &none
+&kp LG(Q)      &kp LC(W)  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT                    &none  &kp C_VOLUME_UP    &none  &none  &none
+&kp LG(LS(Z))  &none      &kp LC(C)   &none       &none       &none      &none  &none  &kp K_MUTE         &none  &none  &none
+&kp LG(Z)      &kp LG(X)  &kp LG(C)   &kp LG(V)   &none       &none      &none  &none  &kp C_VOLUME_DOWN  &none  &none  &none
+&none          &none      &none       &none       &none       &none      &none  &none                                   &none
             >;
         };
 
