@@ -60,7 +60,7 @@
         MOUSE {
             bindings = <
 &none           &none         &none         &none  &none                    &none  &none  &none  &none  &none
-&none           &none         &none         &none  &none  &none      &none  &none  &none  &none  &none  &none
+&none           &none         &none         &none  &none  &none      &none  &none  &none  &none  &none  &mo 3
 &kp LEFT_SHIFT  &kp LCTRL     &kp LEFT_ALT  &none  &none  &none      &none  &none  &none  &none  &none  &none
 &none           &kp LEFT_WIN  &none         &none  &none  &none      &none  &none                       &none
             >;
@@ -77,10 +77,10 @@
 
         ARROW {
             bindings = <
-&none           &none           &kp UP_ARROW    &kp LC(UP_ARROW)    &kp PG_UP                                &none    &none     &none        &none     &none
-&none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp HOME       &kp END        &none      &none    &mkp MB1  &ST 2 LSHFT  &mkp MB2  &none
-&kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_ALT    &kp LC(DOWN_ARROW)  &kp PAGE_DOWN  &none          &none      &none    &none     &none        &none     &none
-&none           &kp LEFT_WIN    &none           &kp TAB             &kp BSPC       &kp ENTER      &kp SPACE  &kp DEL                                   &kp ESC
+&none           &none           &kp UP_ARROW    &kp LC(UP_ARROW)    &kp PG_UP                                &none          &none     &none        &none     &none
+&none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp HOME       &kp END        &none      &none          &mkp MB1  &ST 2 LSHFT  &mkp MB2  &none
+&kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_ALT    &kp LC(DOWN_ARROW)  &kp PAGE_DOWN  &none          &none      &none          &none     &none        &none     &none
+&none           &kp LEFT_WIN    &none           &kp TAB             &kp DEL        &kp SPACE      &kp ENTER  &kp BACKSPACE                                   &kp ESC
             >;
         };
 
