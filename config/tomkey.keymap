@@ -105,7 +105,7 @@
         BT {
             bindings = <
 &kp LG(Q)      &kp LC(W)  &bt BT_CLR_ALL  &bt BT_PRV  &bt BT_NXT                    &none  &kp C_VOLUME_UP    &none  &none  &none
-&kp LG(LS(Z))  &none      &kp LC(C)       &bt BT_CLR  &none       &none      &none  &none  &kp K_MUTE         &none  &none  &none
+&kp LG(LS(Z))  &none      &kp LC(C)       &bt BT_CLR  &none       &none      &none  &none  &kp C_MUTE         &none  &none  &none
 &kp LG(Z)      &kp LG(X)  &kp LG(C)       &kp LG(V)   &none       &none      &none  &none  &kp C_VOLUME_DOWN  &none  &none  &none
 &none          &none      &none           &none       &none       &none      &none  &none                                   &none
             >;
